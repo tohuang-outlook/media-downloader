@@ -1,0 +1,11 @@
+.DS_Store
+.clang-module-cache/
+.pycache/
+*.xcuserstate
+*.app/Contents/_CodeSignature/
+SubtitleBurner.app/Contents/Resources/bin/
+HandBrakeCLI
+MediaDownloaderIcon-1024.png
+MediaDownloaderIcon.iconset/
+SubtitleBurnerIcon-1024.png
+SubtitleBurnerIcon.iconset/
