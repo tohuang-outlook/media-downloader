@@ -1,8 +1,11 @@
 .DS_Store
 .clang-module-cache/
+.build/
+.swiftpm/
+swiftpm-build/
 .pycache/
 *.xcuserstate
-*.app/Contents/_CodeSignature/
+*.app/
 SubtitleBurner.app/Contents/Resources/bin/
 HandBrakeCLI
 MediaDownloaderIcon-1024.png
