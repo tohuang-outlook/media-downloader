@@ -131,6 +131,14 @@ Dark workstation two-column UI. Settings and options on the left, terminal-style
 ./build_media_downloader.sh
 ```
 
+### Verify SwiftPM build and tests
+
+If SwiftPM hits a local `./.build/build.db` error in this workspace, use the bundled verifier, which builds and tests in a clean temporary build directory:
+
+```sh
+./verify_swiftpm.sh
+```
+
 ### Launch
 
 ```sh
@@ -237,6 +245,12 @@ subtitle-burner/
 ---
 
 ## Troubleshooting
+
+**SwiftPM `./.build/build.db` disk I/O error**
+```sh
+./verify_swiftpm.sh
+```
+This project may hit a local SwiftPM database issue when using the default `./.build` directory. The verifier script uses `/private/tmp/media-downloader-swiftpm-build` instead.
 
 **"Apple cannot check it for malicious software"**
 ```sh

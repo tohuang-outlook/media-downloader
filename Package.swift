@@ -17,12 +17,10 @@ let package = Package(
             name: "SubtitleBurner",
             path: ".",
             exclude: [
-                ".DS_Store",
                 ".build",
                 ".clang-module-cache",
                 ".git",
                 ".gitignore",
-                ".pycache",
                 "MediaDownloaderIcon-1024.png",
                 "MediaDownloaderIcon.iconset",
                 "SubtitleBurner.app",
@@ -36,9 +34,9 @@ let package = Package(
                 "build_media_downloader.sh",
                 "fix_subtitle_size.sh",
                 "MediaDownloaderApp.swift",
-                "swiftpm-build",
                 "SubtitleBurnerApp.swift",
-                "SubtitleBurnerTests.swift"
+                "SubtitleBurnerTests.swift",
+                "verify_swiftpm.sh"
             ],
             sources: [
                 "SRTParser.swift",
@@ -56,12 +54,10 @@ let package = Package(
             dependencies: ["SubtitleBurner"],
             path: ".",
             exclude: [
-                ".DS_Store",
                 ".build",
                 ".clang-module-cache",
                 ".git",
                 ".gitignore",
-                ".pycache",
                 "ASSWriter.swift",
                 "KeychainStore.swift",
                 "MediaDownloader.app",
@@ -85,7 +81,7 @@ let package = Package(
                 "build_media_downloader.sh",
                 "fix_subtitle_size.sh",
                 "scripts",
-                "swiftpm-build"
+                "verify_swiftpm.sh"
             ],
             sources: [
                 "SubtitleBurnerTests.swift"
